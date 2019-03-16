@@ -8,6 +8,10 @@ unity smart merge 在自定义的合并驱动中的设置
   name = A custom merge driver used to resolve conflicts in certain files
 	driver = {unity smart merge 程序的路径} merge -p --force %O %B %A %A
 ``` 
+note:
+
+* %O %A %B 的意思请看 https://git-scm.com/docs/gitattributes 中关于Defining a custom merge driver一节的内容
+* merge -p --force 是UnityYAMLMerge的参数，可以直接运行UnityYAMLMerge来查看
  
 ## 在.gitattributes中配置yaml格式的文件合并驱动设置
 
