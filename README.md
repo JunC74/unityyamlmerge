@@ -33,9 +33,9 @@ note:
 
 ## 关于合并中发生的冲突处理
 
-UnityYAMLMerge如果检测到修改的冲突，会有一个采用制定的比较工具来交由用户自己选择冲突部分的取舍。
+UnityYAMLMerge如果检测到修改的冲突，会用一个指定的比较工具来交由用户自己处理冲突部分的取舍。
 
-默认的配置文件为UnityYAMLMerge工具的目录下的mergespecfile.txt,如果用户需要自己调整哪个工具的优先级或者定制的工具可以自己调整，然后通过UnityYAMLMerge的“--fallback”参数来指定配置文件的路径。
+默认的比较工具配置在UnityYAMLMerge工具的目录下的mergespecfile.txt文件中,如果用户需要自己调整哪个工具的优先级或者添加定制的工具都可以自己调整，然后通过UnityYAMLMerge的“--fallback”参数来指定配置文件的路径。
 
 如：在mac下采用Beyond Compare来手动合并的冲突的配置如下
 
