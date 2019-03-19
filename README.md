@@ -7,7 +7,7 @@ unity smart merge 在自定义的合并驱动中的设置
 ``` 
 [merge unityyamlmerge]
 	name = A custom merge driver used to resolve conflicts in certain files
-	driver = {unity smart merge 程序的路径} merge -p --force %O %B %A %A
+	driver = {unity smart merge 程序的路径} merge -p --force %O %A %B %A
 ``` 
 note:
 
